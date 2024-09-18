@@ -176,9 +176,9 @@ h3 {
 /* Responsive iframe and image styling */
 iframe {
     width: 100%;
-    height: auto;
-    max-width: 560px;
-    max-height: 315px;
+    height: 100%; /* Allow iframe to take full height */
+    max-width: none; /* Remove the width constraint */
+    max-height: none; /* Remove the height constraint */
     margin-top: 20px;
     border-radius: 10px;
 }
