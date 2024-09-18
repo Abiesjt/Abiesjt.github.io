@@ -109,6 +109,20 @@ h3 {
     margin-bottom: 15px;
 }
 
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
 /* Resume Section */
 .resume-section {
     text-align: center;
@@ -128,4 +142,21 @@ h3 {
 .intro-box {
     position: relative;
     background-attachment: fixed;
+}
+
+/* Responsive iframe and image styling */
+iframe {
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    max-height: 315px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
 }
