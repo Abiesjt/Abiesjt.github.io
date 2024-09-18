@@ -94,38 +94,25 @@ h3 {
 
 /* Projects Section */
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.project-item {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 }
 
-.project-item iframe,
-.project-item embed {
-    width: 100%;
-    height: auto;
-    max-width: 560px;
-    max-height: 315px;
-    margin-top: 20px;
-    border-radius: 10px;
+.project-item {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 0.95);
+    text-align: center;
 }
 
-.project-item img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
+.project-item h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .project-item p {
@@ -133,6 +120,35 @@ h3 {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+}
+
+.project-item video,
+.project-item iframe,
+.project-item img {
+    max-width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Flex container to ensure footer stays at the bottom */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Resume Section */
