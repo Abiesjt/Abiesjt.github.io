@@ -97,5 +97,32 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    (() => {
+      const projectCards = document.querySelectorAll('.project-item');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (reducedMotion || !('IntersectionObserver' in window)) return;
+
+      const observer = new IntersectionObserver((entries, activeObserver) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            activeObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -7% 0px'
+      });
+
+      projectCards.forEach((card) => {
+        card.classList.add('reveal-on-scroll');
+        observer.observe(card);
+      });
+    })();
+  </script>
+
 </body>
 </html>
