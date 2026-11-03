@@ -1,44 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090c0e">
-  <meta name="description" content="Selected biomedical engineering projects by Abie Thattamparambil.">
-  <title>Projects — Abie Thattamparambil</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biomedical engineering and technical projects by Abie Thattamparambil.">
+  <title>Abie Thattamparambil - Projects</title>
   <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
-  <script type="module" src="projects.js"></script>
 </head>
-<body class="projects-page">
-  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
-  <header class="site-header"><a class="brand" href="index.html" aria-label="Abie Thattamparambil home"><span class="brand-mark">A<span>.</span></span><span class="brand-name">ABIE THATTAMPARAMBIL</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Overview</a><a class="active" href="projects.html">Projects <span class="nav-count">03</span></a><a href="resume.html">Resume</a><a class="nav-contact" href="mailto:abie.thattamparambil@torontomu.ca">Let's connect <span aria-hidden="true">↗</span></a></nav></header>
-  <main>
-    <section class="page-hero shell"><div class="eyebrow"><span class="eyebrow-dot"></span> SELECTED BUILDS / 2022 — 2025</div><h1>Ideas made <em>tangible.</em></h1><p>Three projects across instrumentation, machine learning, and rehabilitation engineering. Each model is interactive — drag to explore.</p><div class="page-hero-note"><span class="note-dot"></span> INTERACTIVE 3D · DRAG TO ROTATE</div></section>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-left"><h1>Abie Thattamparambil</h1></div>
+      <div class="header-right">
+        <nav aria-label="Main navigation">
+          <a href="index.html">About Me</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </div>
+    </header>
 
-    <section class="projects-list shell">
-      <article class="project-feature reveal" id="breathalyzer">
-        <div class="project-visual"><div class="scene-topline"><span>01 / SENSOR SYSTEM</span><span class="live-indicator">LIVE MODEL</span></div><div class="scene-stage" data-scene="breathalyzer" aria-label="Interactive 3D MQ-3 breathalyzer sensor assembly"><div class="scene-loading">ASSEMBLING SENSOR MODEL<span>•••</span></div></div><div class="scene-caption"><span>MQ-3 GAS SENSOR</span><span>ARDUINO PLATFORM</span><span>ANALOG SIGNAL</span></div></div>
-        <div class="project-copy"><div class="eyebrow">INSTRUMENTATION · JAN — APR 2025</div><h2>Blood Alcohol Concentration <em>Breathalyzer</em></h2><p class="project-intro">A low-cost breathalyzer prototype built around an MQ-3 alcohol sensor and Arduino, translating breath-alcohol concentration (BrAC) readings into an estimated blood-alcohol concentration (BAC).</p><div class="project-details"><div><span class="detail-label">01 / HARDWARE</span><p>Integrated the MQ-3 sensor with an Arduino-based measurement system and a voltage-divider / Wheatstone-bridge circuit.</p></div><div><span class="detail-label">02 / CALIBRATION</span><p>Calibrated sensor readings to improve measurement consistency and support the BrAC-to-BAC calculation.</p></div></div><div class="tag-row"><span>Arduino</span><span>MQ-3</span><span>Analog Circuits</span><span>Sensor Calibration</span></div><a class="project-link" href="mailto:abie.thattamparambil@torontomu.ca?subject=MQ-3%20Breathalyzer%20Project">Discuss this build <span>↗</span></a></div>
-      </article>
+    <main>
+      <section class="projects-intro">
+        <h2>My Projects</h2>
+        <p>A selection of biomedical engineering, instrumentation, and software projects.</p>
+      </section>
 
-      <article class="project-feature reverse reveal" id="kidney">
-        <div class="project-visual"><div class="scene-topline"><span>02 / MEDICAL IMAGING AI</span><span class="live-indicator">LIVE MODEL</span></div><div class="scene-stage" data-scene="kidney" aria-label="Interactive 3D kidney scan and imaging visualization"><div class="scene-loading">LOADING SCAN VOLUME<span>•••</span></div></div><div class="scene-caption"><span>CT / PET INPUT</span><span>IMAGE CLASSIFIER</span><span>10K+ SCANS</span></div></div>
-        <div class="project-copy"><div class="eyebrow">MACHINE LEARNING · AUG — SEP 2024</div><h2>Kidney Cancer <em>Detection Model</em></h2><p class="project-intro">A deep-learning classifier trained to distinguish normal and tumour cases from more than 10,000 CT and PET scans, exploring how medical imaging data can support earlier pattern recognition.</p><div class="project-highlight"><strong>92<span>%</span></strong><div><b>Model accuracy</b><small>Reported project result across the evaluated dataset</small></div></div><div class="project-details"><div><span class="detail-label">01 / MODEL</span><p>Developed a binary image-classification workflow using Python and deep-learning tools.</p></div><div><span class="detail-label">02 / DATA</span><p>Applied data augmentation and generative-AI techniques to increase dataset diversity and improve model robustness.</p></div></div><div class="tag-row"><span>Python</span><span>PyTorch</span><span>CT / PET</span><span>Data Augmentation</span></div><a class="project-link" href="mailto:abie.thattamparambil@torontomu.ca?subject=Kidney%20Cancer%20Detection%20Project">Discuss this build <span>↗</span></a></div>
-      </article>
+      <section class="projects-container">
+        <article class="project-item">
+          <h3>Motorized 3D-Printed Orthosis for Hand Rehabilitation</h3>
+          <video controls preload="metadata" aria-label="Motorized hand orthosis project video">
+            <source src="My Movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <a href="Project 1.pdf" class="button" target="_blank" rel="noopener noreferrer">Research Paper</a>
+          <p>
+            Designed and developed a low-cost, 3D-printed hand exoskeleton to assist people experiencing
+            hand immobility due to neuromuscular conditions. Worked in a team of four to integrate EMG
+            sensors with an Arduino so detected muscle contractions could control motor functions.
+            The project received an A+.
+          </p>
+        </article>
 
-      <article class="project-feature reveal" id="orthosis">
-        <div class="project-visual"><div class="scene-topline"><span>03 / ASSISTIVE TECHNOLOGY</span><span class="live-indicator">LIVE MODEL</span></div><div class="scene-stage" data-scene="orthosis" aria-label="Interactive 3D motorized hand orthosis with articulated fingers"><div class="scene-loading">ARTICULATING HAND MODEL<span>•••</span></div></div><div class="scene-caption"><span>EMG INPUT</span><span>FLEXIBLE JOINTS</span><span>MOTORIZED SUPPORT</span></div></div>
-        <div class="project-copy"><div class="eyebrow">REHABILITATION ENGINEERING · JAN — APR 2022</div><h2>Motorized 3D-Printed <em>Hand Orthosis</em></h2><p class="project-intro">A low-cost assistive exoskeleton designed to support hand movement for people experiencing immobility associated with neuromuscular conditions.</p><div class="project-details"><div><span class="detail-label">01 / MECHANICAL DESIGN</span><p>Designed and developed a 3D-printed hand exoskeleton with articulated finger supports and motorized movement.</p></div><div><span class="detail-label">02 / CONTROL</span><p>Collaborated in a four-person team to integrate EMG sensors with an Arduino so detected muscle contractions could control motor functions.</p></div></div><div class="project-result"><span class="result-star">✳</span><span><b>Project grade: A+</b><small>Team-based design and integration project</small></span></div><div class="tag-row"><span>EMG</span><span>Arduino</span><span>3D Printing</span><span>Motor Control</span></div><a class="project-link" href="mailto:abie.thattamparambil@torontomu.ca?subject=Hand%20Orthosis%20Project">Discuss this build <span>↗</span></a></div>
-      </article>
-    </section>
+        <article class="project-item">
+          <h3>Arduino-Based Breathalyzer for Blood Alcohol Estimation</h3>
+          <p>
+            Designed and calibrated a low-cost breathalyzer using the MQ-3 alcohol sensor and Arduino
+            to estimate blood alcohol concentration (BAC) from breath alcohol concentration (BrAC)
+            readings. Calibrated sensor readings and implemented a voltage-divider circuit with a
+            Wheatstone bridge to improve measurement accuracy.
+          </p>
+          <a href="BME674_Breathalyzer_Report.pdf" class="button" target="_blank" rel="noopener noreferrer">Research Paper</a>
+          <embed src="BME674_Breathalyzer_Report.pdf" type="application/pdf" title="Breathalyzer project report">
+        </article>
 
-    <section class="interaction-note shell reveal"><span class="note-icon">↗</span><p><strong>Explore the models.</strong> Click and drag within each scene to rotate the assembly. The models are illustrative visualizations of the project concepts, not manufacturing-ready CAD representations.</p></section>
-    <section class="contact-band shell reveal"><div><div class="eyebrow">WANT TO KNOW MORE?</div><h2>Let's talk <em>engineering.</em></h2></div><a class="button button-primary" href="mailto:abie.thattamparambil@torontomu.ca">Get in touch <span aria-hidden="true">↗</span></a></section>
-  </main>
-  <footer class="site-footer shell"><a class="brand" href="index.html"><span class="brand-mark">A<span>.</span></span><span class="brand-name">ABIE THATTAMPARAMBIL</span></a><span>Biomedical Engineering · Toronto, ON</span><div class="footer-links"><a href="https://github.com/Abiesjt" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://abiesjt.github.io" target="_blank" rel="noreferrer">Portfolio ↗</a><a href="mailto:abie.thattamparambil@torontomu.ca">Email ↗</a></div><span class="copyright">© <span data-year></span></span></footer>
+        <article class="project-item">
+          <h3>Machine Learning Model for Kidney Cancer Detection</h3>
+          <img src="images/Project 3.png" alt="Kidney cancer machine learning project" class="project-image">
+          <p>
+            Developed a machine learning model using more than 10,000 CT and PET scans to classify
+            kidney images as normal or tumour cases, achieving 92% reported accuracy. Applied generative
+            AI techniques and data augmentation to increase dataset diversity and improve classification.
+          </p>
+          <a href="https://github.com/Abiesjt/kidney_cancer_classifier" class="button" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+
+        <article class="project-item">
+          <h3>Interfacing an Analog Temperature Sensor with a PIC24 Microcontroller</h3>
+          <p>
+            Interfaced an analog temperature sensor with a PIC24 microcontroller to acquire and process
+            temperature readings, applying embedded programming and peripheral configuration.
+          </p>
+          <a href="Project 2.pdf" class="button" target="_blank" rel="noopener noreferrer">Research Paper</a>
+          <embed src="Project 2.pdf" type="application/pdf" title="PIC24 temperature sensor project report">
+        </article>
+
+        <article class="project-item">
+          <h3>Application of Hydrogel Polymers for Skin Regeneration</h3>
+          <p>
+            Reviewed the application and efficacy of hydrogel polymers for skin regeneration, focusing
+            on their potential use in biomedical and tissue-engineering applications.
+          </p>
+          <a href="BME 423 TERM REPORT.pdf" class="button" target="_blank" rel="noopener noreferrer">Research Paper</a>
+          <embed src="BME 423 TERM REPORT.pdf" type="application/pdf" title="Hydrogel polymers term report">
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact: <a href="mailto:abie.thattamparambil@torontomu.ca">abie.thattamparambil@torontomu.ca</a></p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/abie-sunny-991869218/" target="_blank" rel="noopener noreferrer">
+          <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://github.com/Abiesjt" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
